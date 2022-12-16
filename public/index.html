@@ -14,8 +14,8 @@
 
 <body>
     <div id="root">
-        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-8 bg-slate-200 font-karla">
-            <header class="p-6 mx-auto fixed top-0 left-0 w-full z-100 bg-white">
+        <div class="content-wrapper max-w-screen-2xl text-base mx-auto px-6 lg:px-10 font-karla">
+            <header class="h-header p-6 mx-auto fixed top-0 left-0 w-full z-100 bg-white">
                 <nav class="flex mx-16  justify-between items-center">
                     <!-- Logo -->
                     <div class="logo basis-2/6 text-center font-semibold text-xl cursor-pointer">
@@ -23,7 +23,7 @@
                     </div>
                     <!-- Menu items -->
                     <ul id="ct-top-menu" class="
-                        basis-3/6 uppercase hidden lg:flex lg:items-center lg:justify-center lg:gap-8 text-sm text-gray-500 font-bold
+                        basis-3/6 uppercase hidden lg:flex lg:items-center lg:justify-center lg:gap-8 text-xs text-gray-500 font-bold
                         ">
                         <li class="ct-top-menu-item ct-top-menu-active">
                             <a href="#">Home</a>
@@ -57,7 +57,6 @@
                                 <span class="mx-1.5">Cart</span>
                                 <span class="ct-badge-circle bg-orange-400 text-white">10</span>
                             </a>
-
                         </li>
                     </ul>
                     <div id="ct-top-menu-icon-toggle"
@@ -70,9 +69,26 @@
                     </div>
                 </nav>
             </header>
-            <main>
-                <div class="slider">
-                    Slider
+            <main class="mt-[80px]">
+                <div class="slider h-[530px] bg-slider-bg bg-cover bg-no-repeat bg-bottom">
+                    <div class="w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-40">
+                        <div class="text-white text-center mx-16">
+                            <div class="text-xs opacity-80 mb-7 tracking-[2px]">BEST PLACE TO BUY DESIGN</div>
+                            <div class="text-5xl  mb-6">Coffee Mugs</div>
+                            <div class="text-lg opacity-90  mb-6">The most versatile furniture system ever created.
+                                Designed
+                                to fit your
+                                life,
+                                made to move and grow.</div>
+                            <div class="flex justify-center">
+                                <div class="text-xs font-bold uppercase bg-white text-gray-900 w-max tracking-[2px] px-6 py-5 
+                                    cursor-pointer hover:bg-opacity-90  hover:scale-110 duration-300 hover:font-black
+                                    ">
+                                    explore our products
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div> <!-- end Slider -->
                 <div class="story">
                     Story
