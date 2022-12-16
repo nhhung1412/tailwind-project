@@ -31,4 +31,15 @@ after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee aft
     @apply absolute left-0 top-16 z-50 w-full bg-white text-center animate-slideDown;
 }
 
+.ct-subheadline {
+    @apply flex items-center justify-center mb-24 text-xs mx-4 font-semibold tracking-[2px] text-gray-400
+}
+
+.ct-subheadline-label {
+    @apply mx-3 uppercase
+}
+
+.ct-subheadline-labelLine {
+    @apply w-7 h-px bg-gray-200
+}
 
