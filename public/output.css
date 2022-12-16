@@ -515,14 +515,30 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed{
+  position: fixed;
+}
+
+.relative{
+  position: relative;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
 }
 
-.mx-10{
-  margin-left: 2.5rem;
-  margin-right: 2.5rem;
+.mx-16{
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 
 .mx-1\.5{
@@ -539,24 +555,28 @@ video {
   margin-left: 4rem;
 }
 
+.mt-20{
+  margin-top: 5rem;
+}
+
 .flex{
   display: flex;
 }
 
-.h-1{
-  height: 0.25rem;
-}
-
-.h-8{
-  height: 2rem;
-}
-
-.h-10{
-  height: 2.5rem;
+.hidden{
+  display: none;
 }
 
 .h-6{
   height: 1.5rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .max-w-screen-2xl{
@@ -583,24 +603,12 @@ video {
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
-}
-
 .justify-end{
   justify-content: flex-end;
 }
 
-.justify-center{
-  justify-content: center;
-}
-
 .justify-between{
   justify-content: space-between;
-}
-
-.gap-8{
-  gap: 2rem;
 }
 
 .bg-slate-200{
@@ -608,9 +616,18 @@ video {
   background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
+.bg-white{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-orange-400{
   --tw-bg-opacity: 1;
   background-color: rgb(251 146 60 / var(--tw-bg-opacity));
+}
+
+.p-6{
+  padding: 1.5rem;
 }
 
 .px-8{
@@ -618,9 +635,9 @@ video {
   padding-right: 2rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .text-center{
@@ -639,11 +656,6 @@ video {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-xs{
-  font-size: 0.75rem;
-  line-height: 1rem;
 }
 
 .text-sm{
@@ -686,28 +698,48 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.ct-top-menu-item::after{
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 0.125rem;
-  width: 0px;
-  --tw-bg-opacity: 1;
-  background-color: rgb(200 159 148 / var(--tw-bg-opacity));
-  transition-property: all;
-  transition-duration: 300ms;
-  content: var(--tw-content);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .ct-top-menu-item:hover{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.ct-top-menu-item:hover::after{
-  content: var(--tw-content);
-  width: 100%;
+@media (min-width: 1024px){
+  .ct-top-menu-item::after{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 0.125rem;
+    width: 0px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(200 159 148 / var(--tw-bg-opacity));
+    transition-property: all;
+    transition-duration: 300ms;
+    content: var(--tw-content);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .ct-top-menu-item:hover::after{
+    content: var(--tw-content);
+    width: 100%;
+  }
+}
+
+.ct-top-menu-active{
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px){
+  .ct-top-menu-active::after{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 0.125rem;
+    width: 100%;
+    content: var(--tw-content);
+    --tw-bg-opacity: 1;
+    background-color: rgb(200 159 148 / var(--tw-bg-opacity));
+  }
 }
 
 .ct-icon{
@@ -724,3 +756,67 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
+
+.ct-top-menu-expanded{
+  position: absolute;
+  left: 0px;
+  top: 4rem;
+  z-index: 50;
+  width: 100%;
+}
+
+@keyframes slideDown{
+  0%{
+    transform: translateY(-100%);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.ct-top-menu-expanded{
+  animation: slideDown 0.5s ease-in-out;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  text-align: center;
+}
+
+@media (min-width: 640px){
+  .sm\:px-4{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:basis-1\/6{
+    flex-basis: 16.666667%;
+  }
+
+  .lg\:items-center{
+    align-items: center;
+  }
+
+  .lg\:justify-start{
+    justify-content: flex-start;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
+  }
+}
+
+
