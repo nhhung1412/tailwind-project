@@ -32,6 +32,9 @@ module.exports = {
         'slider':'url("./img/slider-header.jpg")',
         'featured-mug1':'url("./img/featured-mug1.jpg")',
         'featured-mug2':'url("./img/featured-mug2.jpg")',
+        'coffee-megazine1':'url("./img/coffee-megazine1.jpg")',
+        'coffee-megazine2':'url("./img/coffee-megazine2.jpg")',
+        'coffee-megazine3':'url("./img/coffee-megazine3.jpg")',
       }
     },
   },
