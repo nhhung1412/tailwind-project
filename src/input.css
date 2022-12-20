@@ -47,9 +47,12 @@ after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee aft
     @apply text-xs font-bold uppercase w-max tracking-[2px] px-6 py-5 cursor-pointer hover:bg-opacity-80  hover:scale-110 duration-300 hover:font-black
 }
 
-
 .ct-button-card {
     @apply absolute bottom-3 right-3 left-3 px-6 py-4 text-xs tracking-[2px] uppercase bg-white text-black hidden
     group-hover:block group-hover:animate-slideUp 
     font-bold text-center duration-[400ms]  hover:bg-opacity-90  hover:transition-all hover:ease-in-out hover:duration-[400ms]
+}
+
+.ct-more-products-card {
+    @apply h-auto lg:h-[497px] md:mb-6 lg:mb-12
 }
