@@ -36,6 +36,9 @@ module.exports = {
         'coffee-megazine2':'url("./img/coffee-megazine2.jpg")',
         'coffee-megazine3':'url("./img/coffee-megazine3.jpg")',
         'parallex':'url("./img/parallex.jpg")',
+        'life3':'url("./img/life3.jpg")',
+        'life2':'url("./img/life2.jpg")',
+        'life1':'url("./img/life1.jpg")',
       }
     },
   },

@@ -635,6 +635,10 @@ video {
   margin-bottom: 3rem;
 }
 
+.mt-5{
+  margin-top: 1.25rem;
+}
+
 .flex{
   display: flex;
 }
@@ -687,6 +691,10 @@ video {
   height: 340px;
 }
 
+.h-\[300px\]{
+  height: 300px;
+}
+
 .w-full{
   width: 100%;
 }
@@ -701,15 +709,6 @@ video {
 
 .w-\[70\%\]{
   width: 70%;
-}
-
-.w-max{
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.w-\[100vh\]{
-  width: 100vh;
 }
 
 .w-\[100vw\]{
@@ -847,6 +846,18 @@ video {
 
 .bg-parallex{
   background-image: url("./img/parallex.jpg");
+}
+
+.bg-life1{
+  background-image: url("./img/life1.jpg");
+}
+
+.bg-life2{
+  background-image: url("./img/life2.jpg");
+}
+
+.bg-life3{
+  background-image: url("./img/life3.jpg");
 }
 
 .bg-cover{
@@ -1021,6 +1032,10 @@ video {
 
 .text-opacity-90{
   --tw-text-opacity: 0.9;
+}
+
+.text-opacity-60{
+  --tw-text-opacity: 0.6;
 }
 
 .line-through{
@@ -1408,6 +1423,10 @@ video {
 
   .lg\:gap-5{
     gap: 1.25rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 
   .lg\:text-start{
