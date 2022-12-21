@@ -44,7 +44,7 @@ after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee aft
 }
 
 .ct-button-main {
-    @apply text-xs font-bold uppercase w-max tracking-[2px] px-6 py-5 cursor-pointer hover:bg-opacity-80  hover:scale-110 duration-300 hover:font-black
+    @apply text-xs text-center font-bold uppercase w-full md:w-max tracking-[2px] px-6 py-5 cursor-pointer hover:bg-opacity-80  hover:scale-110 duration-300 hover:font-black
 }
 
 .ct-button-card {
