@@ -56,3 +56,11 @@ after:lg:absolute after:lg:bottom-0 after:lg:left-0 after:lg:bg-light-coffee aft
 .ct-more-products-card {
     @apply h-auto lg:h-[497px] md:mb-6 lg:mb-12
 }
+
+.ct-title-footer {
+    @apply uppercase text-xs font-bold opacity-60 tracking-[2px] mb-5
+}
+
+.ct-link-footer {
+    @apply capitalize text-sm mb-3 text-gray-400 hover:text-brown-coffee transition-all duration-[400ms] ease-in-out
+}
