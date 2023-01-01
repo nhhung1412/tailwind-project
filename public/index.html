@@ -8,24 +8,48 @@
     <link href="./output.css" type="text/css" rel="stylesheet">
     <link href="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a9b50ecdfc8_favicon%202.jpg"
         rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CoffeeStyle Fake</title>
     <script src="./main.js" type="text/javascript" async></script>
 </head>
 
 <body>
     <div id="root">
-        <div class="content-wrapper max-w-screen-2xl text-base mx-auto font-karla">
-            <header class="h-header p-6 mx-auto fixed top-0 left-0 w-full z-50 bg-white">
-                <nav class="flex mx-16  justify-between items-center">
-                    <!-- Logo -->
-                    <div class="logo basis-1/6 text-center font-semibold text-xl cursor-pointer">
+        <div class="content-wrapper text-base mx-auto font-karla">
+            <header class="bg-white h-header fixed left-0 top-0 w-full z-50 mx-auto ">
+                <nav class="mx-auto w-[90%] lg:w-[70%] ">
+                    <!-- logo -->
+                    <span class="logo text-center font-semibold text-xl cursor-pointer leading-[80px]">
                         CoffeeStyle
-                    </div>
-                    <!-- Menu items -->
-                    <ul id="ct-top-menu" class="
-                        basis-4/6 uppercase hidden lg:flex lg:items-center lg:justify-center lg:gap-8 text-xs text-gray-500 font-bold
+                    </span>
+                    <!-- icon menu toggle bar -->
+                    <span id="ct-top-menu-icon-toggle"
+                        class="cursor-pointer float-right leading-[80px] text-3xl lg:hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </span>
+                    <!-- right item menu -->
+                    <span class="ml-16 text-sm text-gray-500 font-medium float-right leading-[80px] opacity-70 hover:opacity-100 duration-200 mr-5
                         ">
-                        <li class="ct-top-menu-item ct-top-menu-active">
+                        <a href="#" class="flex items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="ct-icon">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                            </svg>
+                            <span class="mx-1.5">Cart</span>
+                            <span class="ct-badge-circle bg-orange-400 text-white">10</span>
+                        </a>
+                    </span>
+
+                    <!-- list item -->
+                    <ul id="ct-top-menu" class="
+                    fixed w-full left-0 transition-all duration-300  text-center h-[100vh] bg-light-coffee top-20
+                    float-right space-x-4 uppercase leading-[80px]
+                    lg:flex lg:justify-center lg:items-baseline  lg:relative  lg:h-0  lg:w-fit  lg:top-0  lg:transition-none 
+                        ">
+                        <li class="ct-top-menu-item lg:ct-top-menu-active">
                             <a href="#">Home</a>
                         </li>
                         <li class="ct-top-menu-item">
@@ -44,31 +68,10 @@
                             <a href="#">Styleguide</a>
                         </li>
                     </ul>
-                    <!-- Right items header -->
-                    <ul
-                        class="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-16 text-sm text-gray-500 font-medium ">
-                        <li class="ct-top-menu-item">
-                            <a href="#" class="flex items-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="ct-icon">
-                                    <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                                </svg>
-                                <span class="mx-1.5">Cart</span>
-                                <span class="ct-badge-circle bg-orange-400 text-white">10</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div id="ct-top-menu-icon-toggle"
-                        class="basis-1/6 lg:hidden flex justify-end items-center cursor-pointer px-2 sm:px-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                    </div>
+
                 </nav>
             </header>
+
             <main class="mt-[80px]">
 
                 <div class="slider h-[530px] lg:mx-10 bg-slider bg-cover bg-no-repeat bg-bottom mb-24">
@@ -668,7 +671,6 @@
                 </div> <!-- end  subcribe-us -->
 
             </main>
-
             <footer class="my-24">
                 <div class=" mx-auto w-[90%] lg:w-[70%]">
                     <div
