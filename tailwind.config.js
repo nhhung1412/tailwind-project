@@ -9,24 +9,17 @@ module.exports = {
         'light-coffee' : '#C89F94',
         'brown-coffee' : '#A25F4B'
       },
-      keyframes: {
-        slideDown: {
-          '0%':{transform:'translateY(-100%)'},
-          '100%':{transform:'translateY(0)'}
-        },
-        slideUp: {
-          '0%':{transform:'translate3d(0px,8px,0px)',opacity:0},
-          '100%':{transform:'translate3d(0px,0px,0px)',opacity:1},
-        }
-       
-      },
-      animation: {
-        slideDown: 'slideDown 0.5s ease-in-out',
-        slideUp: 'slideUp .4s ease-in'
-        
-      },
       height: {
         'header': '80px',
+      },
+      keyframes: {
+        slide: {
+          '0%': { 'transform': 'translateX(0)' },
+          '100%': { 'transform': 'translateX(100%)'},
+        },
+      },
+      animation: {
+        slide: 'slide 0.5s ease-in-out',
       },
       backgroundImage: {
         'slider':'url("./img/slider-header.jpg")',
